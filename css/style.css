@@ -55,22 +55,20 @@ header a {
     height: 3px;
 }
 
-header a:hover .hoveranim{
+header a:hover .hoveranim {
     background-color: #ffd700;
     animation: animate 0.3s linear;
 }
 
 @keyframes animate {
     0% {
-    transform:scaleX(0);
-    transform-origin: center;
+        transform: scaleX(0);
+        transform-origin: center;
     }
-    100%
-    {
-      transform:scaleX(1);
-    transform-origin: center;
+    100% {
+        transform: scaleX(1);
+        transform-origin: center;
     }
-   
 }
 
 .logo img {
@@ -101,6 +99,7 @@ h4 {
 }
 
 /* ------- Mes livres ------- */
+
 .mybooks {
     background-color: rgb(0, 0, 0, 0.4);
     color: white;
@@ -145,7 +144,6 @@ h4 {
     border-radius: 20px;
     background-color: rgba(0, 0, 0, 0.4);
 }
-
 
 .book {
     display: grid;
@@ -240,17 +238,17 @@ form {
     height: 100px;
     border-radius: 20px;
     padding: 20px;
-    font-size: 15px;    
+    font-size: 15px;
 }
 
-input:focus, textarea:focus, select:focus, button:focus{
+input:focus, textarea:focus, select:focus, button:focus {
     outline: none;
 }
 
 .sendbtn {
     width: 300px;
     border-radius: 20px;
-    background-color:#ffd700;
+    background-color: #ffd700;
     color: black;
     border: 2px solid #ffd700;
     font-size: 18px;
@@ -262,42 +260,31 @@ input:focus, textarea:focus, select:focus, button:focus{
     height: 30px;
 }
 
-
-@media (max-width: 800px) {
-    
+@media (max-width: 1100px) {
     .books {
         display: flex;
         flex-direction: column;
         width: auto;
     }
-
-    .part img{
+    .part img {
         width: 300px;
     }
-
     .book-text {
         display: flex;
         justify-content: center;
         padding: 10px;
     }
-
     .book {
         display: flex;
         flex-direction: column;
         justify-content: center;
         margin-bottom: 50px;
     }
-
     header {
-        display: flex;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 33% 34% 33%;
     }
-
-    header a{
-        display: none;
-    }
-
-    header .logo {
+    header a {
         display: none;
     }
 
